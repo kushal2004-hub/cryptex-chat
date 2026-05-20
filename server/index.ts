@@ -62,3 +62,8 @@ export function createServer() {
 
   return app;
 }
+
+// --- VERCEL SERVERLESS EXPORT ---
+// This initializes the app and hands it over to Vercel
+const app = createServer();
+export default app;
